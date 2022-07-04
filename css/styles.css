@@ -1,0 +1,62 @@
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+body {
+  font-size: 28px;
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--Dark-Blue);
+}
+.contenido {
+  max-width: 20em;
+  background-color: var(--Dark-Grayish-Blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  margin: 1em;
+  padding-bottom: 3em;
+  border-radius: 0.6em;
+  position: relative;
+}
+.titulo {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: var(--Neon-Green);
+  letter-spacing: 0.4rem;
+  text-align: center;
+}
+.consejo {
+  text-align: center;
+  color: var(--Light-Cyan);
+}
+.boton {
+  position: absolute;
+  bottom: -1.3em;
+  background-color: var(--Neon-Green);
+  border: none;
+  padding: 1.5rem;
+  border-radius: 2em;
+  cursor: pointer;
+}
+.boton:hover {
+  box-shadow: 0px 1px 40px 2px var(--Neon-Green);
+}
+
+@media (max-width: 420px) {
+  .titulo {
+    font-size: 0.8rem;
+  }
+  
+  .consejo {
+    font-size: 1.2rem;
+  }
+}
